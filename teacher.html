@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Login/Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        #loginButton {
+            background-color: #3498db;
+            color: #fff;
+        }
+        #signupButton {
+            background-color: #2ecc71;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Teacher Login/Sign Up</h1> 
+
+    <img src="teacher.png"> <img> <br>
+
+    <button id="loginButton">Login</button>
+    <button id="signupButton">Sign Up</button>
+
+    <script>
+        document.getElementById('loginButton').addEventListener('click', function() {
+            window.location.href = 'teacher_login.html';
+            // Add login functionality for the teacher if needed
+        });
+
+
+        document.getElementById('signupButton').addEventListener('click', function() {
+            window.location.href = 'teacher signup.html';
+            // Add sign-up functionality for the teacher if needed
+        });
+
+       
+
+
+
+    </script>
+
+</body>
+</html>

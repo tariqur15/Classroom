@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        input, select {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #2ecc71;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Student Sign Up</h1>
+
+    <form action="process_student_signup.php" method="post">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="semester">Semester:</label>
+        <select id="semester" name="semester" required>
+            <option value="1">1st Semester </option>
+            <option value="2">2nd Semester </option>
+            <option value="3">3rd Semester </option>
+            <option value="4">4th Semester </option>
+            <option value="5">5th Semester </option>
+            <option value="6">6th Semester </option>
+            <option value="7">7th Semester </option>
+            <option value="8">8th Semester </option>
+            <option value="all">All Semester </option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="studentID">Student ID:</label>
+        <input type="text" id="studentID" name="studentID" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Sign Up</button>
+
+        
+    </form>
+
+    <p>Already have an account? <a href="student_login.html">Login</a></p>
+
+</body>
+</html>

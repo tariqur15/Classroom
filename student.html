@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login/Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        #loginButton {
+            background-color: #3498db;
+            color: #fff;
+        }
+        #signupButton {
+            background-color: #2ecc71;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Student Login/Sign Up</h1>
+
+    <button id="loginButton">Login</button>
+    <button id="signupButton">Sign Up</button>
+
+    <script>
+        document.getElementById('loginButton').addEventListener('click', function() {
+            // Redirect to the student_login.html page when the Teacher button is clicked
+            window.location.href = 'student_login.html';
+        });
+
+        document.getElementById('signupButton').addEventListener('click', function() {
+            // Redirect to the student signup.html page when the Teacher button is clicked
+            window.location.href = 'student signup.html';
+        });
+    </script>
+
+</body>
+</html>

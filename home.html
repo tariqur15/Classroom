@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher and Student Buttons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        #teacherButton {
+            background-color: #3498db;
+            color: #fff;
+        }
+        #studentButton {
+            background-color: #2ecc71;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+        <h1>Welcome To Ugv Virtual Classroom</h1>
+
+        <img src="home.png"> </img>
+
+    <h2>Select Your Role</h2>
+
+    <button id="teacherButton">Teacher</button>
+    <button id="studentButton">Student</button>
+<br> <br>
+<a href="https://warehouse.appilix.com/uploads/app-apk-65c1555dabe4b-1707169117.apk" class="your-class-name">
+    <img src="download app.png" alt="Download App" style="width: 300px; height: auto;">
+</a>
+    <script>
+        document.getElementById('teacherButton').addEventListener('click', function() {
+            // Redirect to the teacher.html page when the Teacher button is clicked
+            window.location.href = 'teacher.html';
+        });
+        
+        document.getElementById('studentButton').addEventListener('click', function() {
+            // Redirect to the teacher.html page when the Teacher button is clicked
+            window.location.href = 'student.html';
+        });
+
+        
+        
+        
+    </script>
+
+
+
+</body>
+</html>
